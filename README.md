@@ -61,7 +61,9 @@ The dataset comes from an online UK-based retail store that sells unique gift it
 
 This folder contains all the scripts and notebooks used to clean and prepare the dataset before performing analysis.
 
-### 📁 Folder Contents (Folder Name: Data Set)
+Data Link: 🔗 [Data Set](https://drive.google.com/drive/folders/1t3oLkSQUluilEzn5HOht7SSkM_aX4C4S?usp=sharing)
+
+### 📁 Folder Contents (Google Drive)
 
 - `CSV Cleaning data.ipynb` – Python notebook using **Pandas** and **NumPy** to clean the raw CSV file.
 - `sql_data_cleaning.sql` – SQL script to remove extra or garbage data after importing the dataset.
@@ -90,16 +92,21 @@ The SQL script for this step:
 
 ### 📁 Raw Data Source
 
-You can find the original uncleaned dataset in the folder:  
+You can find the original uncleaned dataset in the Google Drive:  
 📂 `Data Set/Row Data Set/`
+
+🔗 [Raw Data](https://drive.google.com/file/d/1-FO8AQCkfhpwpFwUzt7FAKXq99GlJ3Vw/view?usp=drive_link)
 
 Or download it directly from Kaggle:  
 🔗 [Online Retail Dataset](https://www.kaggle.com/datasets/vijayuv/onlineretail)
 
-### 📁 Main Data Ser
+### 📁 Main Data Set
 
-You can find the original uncleaned dataset in the folder:  
+You can find the original uncleaned dataset in the Google Drive:  
 📂 `Data Set/Clean and main Data set/`
+
+🔗 [EDA & RFM.csv](https://drive.google.com/file/d/1sEeb2H8rCSvIqSsmmCIFTsn9xwsEtWDi/view?usp=sharing)
+
 ### ✅ Final Output
 
 After both cleaning phases, we obtained a **clean and analysis-ready dataset** which powers all further SQL queries and segmentation processes in the project.
