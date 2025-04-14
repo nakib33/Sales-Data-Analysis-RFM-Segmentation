@@ -57,6 +57,59 @@ The dataset comes from an online UK-based retail store that sells unique gift it
 
 ---
 
+# 🧹 Data Preprocessing
+
+This folder contains all the scripts and notebooks used to clean and prepare the dataset before performing analysis.
+
+## 📁 Folder Contents (Folder Name: Data Set)
+
+- `CSV Cleaning data.ipynb` – Python notebook using **Pandas** and **NumPy** to clean the raw CSV file.
+- `sql_data_cleaning.sql` – SQL script to remove extra or garbage data after importing the dataset.
+- `README.md` – This file (describes the preprocessing process).
+
+## 🔍 Process Overview
+
+We performed data preprocessing in **two major steps**:
+
+### 1. Python-Based Data Cleaning
+We used Pandas and NumPy in Python to prepare a clean and structured version of the dataset that would be easier to work with for SQL-based analytics.
+The complete notebook used for this step is named: CSV Cleaning data.ipynb, located in the Data Preprocessing/ folder.
+This was done using the notebook:  
+📄 `CSV Cleaning data.ipynb`
+
+📂 Located in: `Data Preprocessing/`
+
+### 2. SQL-Based Data Cleaning
+
+After the initial cleanup, we further refined the dataset using SQL to remove any remaining unnecessary information and noise that could impact performance or skew analysis.
+You can find the SQL file for this process inside the Data Preprocessing/ folder as well.
+The SQL script for this step:  
+📄 `sql_data_cleaning.sql`
+
+📂 Located in: `Data Preprocessing/`
+
+## 📁 Raw Data Source
+
+You can find the original uncleaned dataset in the folder:  
+📂 `Data Set/Row Data Set/`
+
+Or download it directly from Kaggle:  
+🔗 [Online Retail Dataset](https://www.kaggle.com/datasets/vijayuv/onlineretail)
+
+## 📁 Main Data Ser
+
+You can find the original uncleaned dataset in the folder:  
+📂 `Data Set/Clean and main Data set/`
+## ✅ Final Output
+
+After both cleaning phases, we obtained a **clean and analysis-ready dataset** which powers all further SQL queries and segmentation processes in the project.
+
+Feel free to explore the `.ipynb` and `.sql` files in this folder to understand the cleaning process step-by-step.
+
+
+
+---
+
 ## 📈 Project Highlights
 
 ### 1. **Data Cleaning & Preprocessing**
