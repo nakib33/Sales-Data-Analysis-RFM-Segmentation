@@ -77,18 +77,15 @@ We performed data preprocessing in **two major steps**:
 We used Pandas and NumPy in Python to prepare a clean and structured version of the dataset that would be easier to work with for SQL-based analytics.
 The complete notebook used for this step is named: CSV Cleaning data.ipynb, located in the Data Preprocessing/ folder.
 This was done using the notebook:  
-📄 `CSV Cleaning data.ipynb` **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**: SQL script for cleaning and preparing the data for analysis.
+📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**
 
-📂 Located in: `Data Preprocessing/`
 
 **2. SQL-Based Data Cleaning**
 
 After the initial cleanup, we further refined the dataset using SQL to remove any remaining unnecessary information and noise that could impact performance or skew analysis.
 You can find the SQL file for this process inside the Data Preprocessing/ folder as well.
 The SQL script for this step:  
-📄 `sql_data_cleaning.sql`
-
-📂 Located in: `Data Preprocessing/`
+📄 **[sql_data_cleaning.sql](Data%20Preprocessing/sql_data_cleaning.sql)**
 
 ### 📁 Raw Data Source
 
