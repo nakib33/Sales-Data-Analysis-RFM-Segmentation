@@ -194,10 +194,13 @@ Most analytics portfolios focus on tools like Python, Excel, or Power BI. This p
 sales-data-analysis-rfm-segmentation-sql/
 │
 ├── 📂 data/
-│   └── online_retail.csv
+│   └── [Kaggle - E-Commerce Sales Data](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
+├── 📂 Data Processing/
+│   ├── 01_sql_data_cleaning.sql
+│   ├── 02_CSV Cleaning data.ipynb
 │
-├── 📂 sql/
-│   ├── 01_data_preprocessing.sql
+├── 📂 Analysis/
+│   ├── 1. CreateDB and InsertData/Create & insert.sql
 │   ├── 02_exploratory_data_analysis.sql
 │   ├── 03_rfm_segmentation.sql
 │   ├── 04_advanced_sales_queries.sql
