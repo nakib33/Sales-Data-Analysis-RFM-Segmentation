@@ -30,12 +30,12 @@ Businesses today collect massive amounts of transactional data, but very few uti
 ---
 
 The project covers:
-- 🔧 **Data Cleaning & Preprocessing**
-- 📊 **Exploratory Data Analysis (EDA)**
-- 📈 **Sales Trend Analysis**
-- 🎯 **Customer Segmentation with RFM**
-- 🛒 **Sales Optimization Queries**
-- 📦 **Product Performance Insights**
+- **Data Cleaning & Preprocessing**
+- **Exploratory Data Analysis (EDA)**
+- **Sales Trend Analysis**
+- **Customer Segmentation with RFM**
+- **Sales Optimization Queries**
+- **Product Performance Insights**
 
 ---
 
