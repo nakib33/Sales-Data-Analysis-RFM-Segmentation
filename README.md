@@ -61,7 +61,7 @@ The dataset comes from an online UK-based retail store that sells unique gift it
 
 ### Click here to see the full process
 
-📄 **[README.md](Data%20Preprocessing/CSV%20Cleaning%20README.md)**
+📄 **[README.md](Data%20Preprocessing/README.md)**
 
 This folder contains all the scripts and notebooks used to clean and prepare the dataset before performing analysis.
 
