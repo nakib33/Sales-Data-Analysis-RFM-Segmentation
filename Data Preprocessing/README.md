@@ -90,30 +90,30 @@ This project involves processing a sales dataset stored in a SQL database. The g
 
 2. **Exclude Canceled Orders**
    - Executed a DELETE statement to remove all records where the `InvoiceNo` starts with 'C', indicating that the order was canceled.
-     ```sql
-     DELETE FROM sales_data
-     WHERE InvoiceNo LIKE 'C%';
-     ```
+   ```sql
+   DELETE FROM sales_data
+   WHERE InvoiceNo LIKE 'C%';
+   ```
 
 3. **Ensure Positive Quantities and Prices**
    - Executed a DELETE statement to remove all records where `Quantity` is less than or equal to 0 or where UnitPrice is less than or equal to 0.
-     ```sql
-     DELETE FROM sales_data
-     WHERE Quantity <= 0 OR UnitPrice <= 0;
-     ```
+   ```sql
+   DELETE FROM sales_data
+   WHERE Quantity <= 0 OR UnitPrice <= 0;
+   ```
 
 4. **Create a TotalPrice Column**
-   -Altered the sales_data table to add a new column named `TotalPrice` with a DECIMAL data type.
+   - Altered the sales_data table to add a new column named `TotalPrice` with a DECIMAL data type.
    ```sql
-      ALTER TABLE sales_data ADD COLUMN TotalPrice DECIMAL(10,2);
+   ALTER TABLE sales_data ADD COLUMN TotalPrice DECIMAL(10,2);
    ```
 5. **Calculate Total Price**
    - Updated the TotalPrice column by multiplying `Quantity` and `UnitPrice` for all records where both values are not NULL.
-     ```sql
-      UPDATE sales_data
-      SET TotalPrice = Quantity * UnitPrice
-      WHERE Quantity IS NOT NULL AND UnitPrice IS NOT NULL;
-     ```
+   ```sql
+   UPDATE sales_data
+   SET TotalPrice = Quantity * UnitPrice
+   WHERE Quantity IS NOT NULL AND UnitPrice IS NOT NULL;
+   ```
 
 ### Conclusion
 The sales dataset has been successfully processed to remove unwanted records and to include a new `TotalPrice` column, which provides a calculated value for each sale. This cleaned dataset is now ready for further analysis or reporting.
