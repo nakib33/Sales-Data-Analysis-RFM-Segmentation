@@ -10,6 +10,10 @@
 
 ---
 
+📄 **[CSV Cleaning data.ipynb](CSV%20Cleaning%20data.ipynb)**
+
+---
+
 ### Overview
 This project involves cleaning and preprocessing a sales dataset to prepare it for analysis. The dataset is loaded from a CSV file, and various cleaning operations are performed to ensure data integrity and usability.
 
@@ -69,6 +73,10 @@ Step 2:
 ---
 
 ## SQL Data Processing for Sales Data
+
+---
+
+📄 **[sql_data_cleaning.sql](sql_data_cleaning.sql)**
 
 ---
 
