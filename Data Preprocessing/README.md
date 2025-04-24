@@ -64,3 +64,59 @@ Make sure to replace `'data.csv'` with the actual path to your dataset when runn
 
 ---
 
+Step 2:
+
+---
+
+## SQL Data Processing for Sales Data
+
+---
+
+### Overview
+This project involves processing a sales dataset stored in a SQL database. The goal is to clean the data by removing unwanted records and adding a new calculated column for total sales price.
+
+### Requirements
+- SQL Database (e.g., MySQL, PostgreSQL)
+- Access to the `sales_data` table
+
+### Steps Taken
+
+1. **Remove Null CustomerIDs**
+   - Executed a DELETE statement to remove all records from the `sales_data` table where the `CustomerID` is NULL.
+   ```sql
+   DELETE FROM sales_data
+   WHERE CustomerID IS NULL;
+   ```
+
+2. **Exclude Canceled Orders**
+   - Executed a DELETE statement to remove all records where the `InvoiceNo` starts with 'C', indicating that the order was canceled.
+     ```sql
+     DELETE FROM sales_data
+     WHERE InvoiceNo LIKE 'C%';
+     ```
+
+3. **Ensure Positive Quantities and Prices**
+   - Executed a DELETE statement to remove all records where `Quantity` is less than or equal to 0 or where UnitPrice is less than or equal to 0.
+     ```sql
+     DELETE FROM sales_data
+     WHERE Quantity <= 0 OR UnitPrice <= 0;
+     ```
+
+4. **Create a TotalPrice Column**
+   -Altered the sales_data table to add a new column named `TotalPrice` with a DECIMAL data type.
+   ```sql
+      ALTER TABLE sales_data ADD COLUMN TotalPrice DECIMAL(10,2);
+   ```
+5. **Calculate Total Price**
+   - Updated the TotalPrice column by multiplying `Quantity` and `UnitPrice` for all records where both values are not NULL.
+     ```sql
+      UPDATE sales_data
+      SET TotalPrice = Quantity * UnitPrice
+      WHERE Quantity IS NOT NULL AND UnitPrice IS NOT NULL;
+     ```
+
+### Conclusion
+The sales dataset has been successfully processed to remove unwanted records and to include a new `TotalPrice` column, which provides a calculated value for each sale. This cleaned dataset is now ready for further analysis or reporting.
+
+### Note
+Ensure that you have the necessary permissions to execute DELETE and ALTER statements on the sales_data table
