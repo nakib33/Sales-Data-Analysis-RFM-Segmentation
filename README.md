@@ -59,6 +59,10 @@ The dataset comes from an online UK-based retail store that sells unique gift it
 
 ## 🧹 Data Preprocessing
 
+### Click here to see the full process
+
+📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20README.md)**
+
 This folder contains all the scripts and notebooks used to clean and prepare the dataset before performing analysis.
 
 Data Link: 🔗 [Data Set](https://drive.google.com/drive/folders/1t3oLkSQUluilEzn5HOht7SSkM_aX4C4S?usp=sharing)
