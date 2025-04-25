@@ -19,7 +19,7 @@ SELECT * FROM sales_data;
 
 ---
 
-### 1. Dataset Overview & Basic Stats
+### 1. 📉 Dataset Overview & Basic Stats
 **a. Total number of records**
 ```sql
 -- Total number of records
@@ -60,12 +60,34 @@ FROM sales_data;
 
 ---
 
-## 💰 Sales Trends & Volume
+###2. 💰 Sales Trends & Volume
+
+**a. Total revenue**
 
 ```sql
 -- Total revenue
 SELECT ROUND(SUM(Quantity * UnitPrice), 2) AS TotalRevenue FROM sales_data;
+```
 
+**Result:** TotalRevenue: 8911407.90
+
+**b. Monthly revenue trend**
+```sql
+-- Monthly revenue trend
+SELECT
+    DATE_FORMAT(InvoiceDate, '%Y-%m') AS Month,
+    ROUND(SUM(Quantity * UnitPrice), 2) AS Revenue
+FROM sales_data
+GROUP BY Month
+ORDER BY Month
+```
+**Result:**
+
+![Monthly revenue trend](Result%20Output/5.png)
+
+**c. Daily sales trend**
+
+```sql
 -- Monthly revenue trend
 SELECT
     DATE_FORMAT(InvoiceDate, '%Y-%m') AS Month,
@@ -82,6 +104,10 @@ FROM sales_data
 GROUP BY SalesDate
 ORDER BY SalesDate;
 ```
+
+**Result:**
+
+![Monthly revenue trend](Result%20Output/6.png)
 
 ---
 
