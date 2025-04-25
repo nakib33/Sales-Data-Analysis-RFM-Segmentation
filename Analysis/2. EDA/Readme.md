@@ -16,6 +16,9 @@ SELECT * FROM sales_data;
 ---
 
 ## 📊 Complete SQL EDA Query Pack
+
+---
+
 ### 1. Dataset Overview & Basic Stats
 **a. Total number of records**
 ```sql
@@ -25,15 +28,18 @@ SELECT COUNT(*) AS TotalRows FROM sales_data;
 
 **Result:** TotalRows: 397880
 
-
-
+**b. Preview first 10 rows**
 ```sql
--- Total number of records
-SELECT COUNT(*) AS TotalRows FROM sales_data;
-
 -- Preview first 10 rows
 SELECT * FROM sales_data LIMIT 10;
+```
+**Result:** 
 
+![Preview first 10 rows](Result Output/2.png)
+
+**c. Check for NULLs per column**
+
+```sql
 -- Check for NULLs per column
 SELECT
     SUM(CASE WHEN InvoiceNo IS NULL THEN 1 ELSE 0 END) AS NullInvoice,
@@ -46,6 +52,10 @@ SELECT
     SUM(CASE WHEN Country IS NULL THEN 1 ELSE 0 END) AS NullCountry
 FROM sales_data;
 ```
+
+**Result:**
+![Check for NULLs per columns](Result Output/3.png)
+
 
 ---
 
