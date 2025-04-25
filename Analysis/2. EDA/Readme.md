@@ -60,7 +60,7 @@ FROM sales_data;
 
 ---
 
-###2. 💰 Sales Trends & Volume
+### 2. 💰 Sales Trends & Volume
 
 **a. Total revenue**
 
@@ -167,12 +167,21 @@ LIMIT 10;
 
 ---
 
-## 👥 Customer Analysis
+### 4. 👥 Customer Analysis
+
+**a. Total number of unique customers**
 
 ```sql
 -- Total number of unique customers
 SELECT COUNT(DISTINCT CustomerID) AS UniqueCustomers FROM sales_data;
+```
 
+**Result:** UniqueCustomers: 4338
+
+
+**b. Top 10 customers by spend**
+
+```sql
 -- Top 10 customers by spend
 SELECT
     CustomerID,
@@ -181,7 +190,15 @@ FROM sales_data
 GROUP BY CustomerID
 ORDER BY TotalSpent DESC
 LIMIT 10;
+```
 
+**Result:**
+
+![Top 10 customers by spend](Result%20Output/11.png)
+
+**c. Number of orders per customer**
+
+```sql
 -- Number of orders per customer
 SELECT
     CustomerID,
@@ -192,9 +209,15 @@ ORDER BY TotalOrders DESC
 LIMIT 10;
 ```
 
+**Result:**
+
+![Number of orders per customer](Result%20Output/12.png)`
+
 ---
 
-## 🌍 Country-wise Sales Distribution
+### 5. 🌍 Country-wise Sales Distribution
+
+**a. Revenue by country**
 
 ```sql
 -- Revenue by country
@@ -204,7 +227,15 @@ SELECT
 FROM sales_data
 GROUP BY Country
 ORDER BY Revenue DESC;
+```
 
+**Result:**
+
+![Revenue by country](Result%20Output/13.png)
+
+**b. Customer count per country**
+
+```sql
 -- Customer count per country
 SELECT
     Country,
@@ -214,9 +245,14 @@ GROUP BY Country
 ORDER BY TotalCustomers DESC;
 ```
 
+**Result:**
+
+![Customer count per countrye](Result%20Output/14.png)
+
+
 ---
 
-## 🧾 Invoice Analysis
+## 6. 🧾 Invoice Analysis
 
 ```sql
 -- Number of invoices
