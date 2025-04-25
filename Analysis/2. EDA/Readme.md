@@ -111,7 +111,9 @@ ORDER BY SalesDate;
 
 ---
 
-## 🥇 Top & Bottom Performers
+### 3. 🥇 Top & Bottom Performers
+
+**a. Top 10 selling products (by quantity)**
 
 ```sql
 -- Top 10 selling products (by quantity)
@@ -122,7 +124,15 @@ FROM sales_data
 GROUP BY Description
 ORDER BY TotalUnitsSold DESC
 LIMIT 10;
+```
 
+**Result:**
+
+![Top 10 selling products](Result%20Output/7.png)
+
+**b. Top 10 products by revenue**
+
+```sql
 -- Top 10 products by revenue
 SELECT
     Description,
@@ -131,7 +141,15 @@ FROM sales_data
 GROUP BY Description
 ORDER BY TotalRevenue DESC
 LIMIT 10;
+```
 
+**Result:**
+
+![Top 10 products by revenue](Result%20Output/8.png)
+
+**c. Bottom 10 products by revenue**
+
+```sql
 -- Bottom 10 products by revenue
 SELECT
     Description,
@@ -142,6 +160,10 @@ HAVING TotalRevenue > 0
 ORDER BY TotalRevenue ASC
 LIMIT 10;
 ```
+
+**Result:**
+
+![Bottom 10 products by revenue](Result%20Output/9.png)
 
 ---
 
