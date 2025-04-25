@@ -35,7 +35,7 @@ SELECT * FROM sales_data LIMIT 10;
 ```
 **Result:** 
 
-![Preview first 10 rows](Result Output/2.png)
+![Preview first 10 rows](Result%20Output/2.png)
 
 **c. Check for NULLs per column**
 
@@ -55,7 +55,7 @@ FROM sales_data;
 
 **Result:**
 
-![Check for NULLs per columns](Result Output/3.png)
+![Check for NULLs per columns](Result%20Outputt/3.png)
 
 
 ---
