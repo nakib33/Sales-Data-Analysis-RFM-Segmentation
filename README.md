@@ -114,25 +114,35 @@ After both cleaning phases, we obtained a **clean and analysis-ready dataset** w
 
 Feel free to explore the `.ipynb` and `.sql` files in this folder to understand the cleaning process step-by-step.
 
-
-
 ---
 
 ## 📈 Project Highlights
 
 ### 1. **Data Cleaning & Preprocessing**
+
+Click Here For Full DDetails with SQL Code:
+📄 **[Data Cleaning & Preprocessing](Analysis/1.%20CreateDB%20and%20InsertData/README.md)**
+
 - Removal of nulls, cancellations, and zero or negative values
 - Standardized product descriptions
 - Duplicate detection
 - Outlier filtering with IQR method
 
 ### 2. **Exploratory Data Analysis (EDA)**
+
+Click Here For Full DDetails with SQL Code:
+📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**
+
 - Top-selling products
 - Country-wise and monthly sales trends
 - Sales distribution by time and region
 - Customer retention and behavior
 
 ### 3. **RFM Segmentation**
+
+Click Here For Full DDetails with SQL Code:
+📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**
+
 - Classify customers based on how recently, how often, and how much they purchase
 - Create dynamic segments like:
   - Champions
@@ -142,6 +152,10 @@ Feel free to explore the `.ipynb` and `.sql` files in this folder to understand 
   - Lost Customers
 
 ### 4. **Advanced Sales Analytics**
+
+Click Here For Full DDetails with SQL Code:
+📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**
+
 - Frequently bought together products
 - Peak sales hours
 - Underperforming SKUs
@@ -208,7 +222,7 @@ sales-data-analysis-rfm-segmentation-sql/
 │   ├── 02_exploratory_data_analysis.sql
 │   ├── 03_rfm_segmentation.sql
 │   ├── 04_advanced_sales_queries.sql
-│   └── 05_country_product_customer_insights.sql
+│   
 │
 ├── 📄 README.md
 └── 📄 ERD.png (optional: for visual schema)
