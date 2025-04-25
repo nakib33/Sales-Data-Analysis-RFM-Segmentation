@@ -119,8 +119,7 @@ Feel free to explore the `.ipynb` and `.sql` files in this folder to understand 
 ## 📈 Project Highlights
 
 ### 1. **Data Cleaning & Preprocessing**
-
-Click Here For Full DDetails with SQL Code:
+**Click Here For Full DDetails with SQL Code:**
 📄 **[Data Cleaning & Preprocessing](Analysis/1.%20CreateDB%20and%20InsertData/README.md)**
 
 - Removal of nulls, cancellations, and zero or negative values
@@ -129,9 +128,8 @@ Click Here For Full DDetails with SQL Code:
 - Outlier filtering with IQR method
 
 ### 2. **Exploratory Data Analysis (EDA)**
-
-Click Here For Full DDetails with SQL Code:
-📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**
+**Click Here For Full DDetails with SQL Code:**
+📄 **[Exploratory Data Analysis](Analysis/2.%20EDA/Readme.md)**
 
 - Top-selling products
 - Country-wise and monthly sales trends
@@ -139,9 +137,8 @@ Click Here For Full DDetails with SQL Code:
 - Customer retention and behavior
 
 ### 3. **RFM Segmentation**
-
-Click Here For Full DDetails with SQL Code:
-📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**
+**Click Here For Full DDetails with SQL Code:**
+📄 **[RFM Segmentation](Analysis/3.%20RFM/Readme.md)**
 
 - Classify customers based on how recently, how often, and how much they purchase
 - Create dynamic segments like:
@@ -152,9 +149,8 @@ Click Here For Full DDetails with SQL Code:
   - Lost Customers
 
 ### 4. **Advanced Sales Analytics**
-
-Click Here For Full DDetails with SQL Code:
-📄 **[CSV Cleaning data.ipynb](Data%20Preprocessing/CSV%20Cleaning%20data.ipynb)**
+**Click Here For Full DDetails with SQL Code:**
+📄 **[Advanced Sales Analytics](Analysis/4.%20Advanced%20Sales%20Analytics/Readme.md)**
 
 - Frequently bought together products
 - Peak sales hours
