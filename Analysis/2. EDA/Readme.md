@@ -15,7 +15,17 @@ SELECT * FROM sales_data;
 
 ---
 
-## 📌 Dataset Overview & Basic Statistics
+## 📊 Complete SQL EDA Query Pack
+### 1. Dataset Overview & Basic Stats
+**a. Total number of records**
+```sql
+-- Total number of records
+SELECT COUNT(*) AS TotalRows FROM sales_data;
+```
+
+**Result:** TotalRows: 397880
+
+
 
 ```sql
 -- Total number of records
