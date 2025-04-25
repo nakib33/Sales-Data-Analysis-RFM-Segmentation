@@ -54,6 +54,7 @@ FROM sales_data;
 ```
 
 **Result:**
+
 ![Check for NULLs per columns](Result Output/3.png)
 
 
